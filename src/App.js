@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import styled from 'styled-components';
 
-function App() {
+import NavBar from './Components/NavBar';
+import Footer from './Components/Footer';
+
+import Home from './Pages/Home';
+import Systems from './Pages/Systems';
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Login from "./Pages/Login";
+import Models from './Pages/Models';
+import Table from './Pages/Table';
+
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Container>
+        <NavBar/>
+        <Switch> 
+          <Route path="/" exact component={Home} />
+          <Route path="/systems" exact component={Systems} />
+          <Route path="/models" exact component={Table} />
+          <Route path="/about" exact component={About} />
+          <Route path="/contact" exact component={Contact} />
+          <Route path="/login" exact component={Login} />
+        </Switch>
+        </Container>
+        <Footer/>
+      </Router>
     </div>
-  );
+  )
 }
+
+const Container = styled.div`
+  background: white;
+`;
 
 export default App;
