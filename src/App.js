@@ -13,6 +13,7 @@ import Models from './Pages/Models';
 import Table from './Pages/Table';
 
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import CustomizedDialogs from './Components/Dialog';
 
 const App = () => {
   return (
@@ -23,12 +24,15 @@ const App = () => {
         <Switch> 
           <Route path="/" exact component={Home} />
           <Route path="/systems" exact component={Systems} />
-          <Route path="/models" exact component={Table} />
+          <Route path="/models" exact component={Models} />
           <Route path="/about" exact component={About} />
           <Route path="/contact" exact component={Contact} />
-          <Route path="/login" exact component={Login} />
+          <Route path="/login" exact component={Login} /> 
         </Switch>
         </Container>
+        <CustomizedDialogs>
+          Set up form
+        </CustomizedDialogs>
         <Footer/>
       </Router>
     </div>
