@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import styled from 'styled-components';
 
 import NavBar from './Components/NavBar';
@@ -15,6 +16,11 @@ import Table from './Pages/Table';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import CustomizedDialogs from './Components/Dialog';
 
+const api = axios.create({
+  baseURL: 'http://localhost:3000'
+})
+
+
 const App = () => {
   return (
     <div className="App">
@@ -22,7 +28,7 @@ const App = () => {
         <Container>
         <NavBar/>
         <Switch> 
-          <Route path="/" exact component={Home} />
+          <Route path="/" exact={true} component={Home} />
           <Route path="/systems" exact component={Systems} />
           <Route path="/models" exact component={Models} />
           <Route path="/about" exact component={About} />

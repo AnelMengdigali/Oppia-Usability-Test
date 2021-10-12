@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import axios from 'axios';
+window.axios = axios;
 //import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 //import Cards from './Components/CardItems';
 
