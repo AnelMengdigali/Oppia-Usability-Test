@@ -61,23 +61,17 @@ export default function CustomizedDialogs({children}) {
   return (
     <div>
       <Button variant="outlined" onClick={handleClickOpen}>
-        Open dialog
+        Choose
       </Button>
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}
       >
-        <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-          Modal title
-        </BootstrapDialogTitle>
         <DialogContent dividers>
           {children}
         </DialogContent>
         <DialogActions>
-          <Button autoFocus onClick={handleClose}>
-            Save changes
-          </Button>
         </DialogActions>
       </BootstrapDialog>
     </div>

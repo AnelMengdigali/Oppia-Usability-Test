@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import "../Styles/Models.css";
 import Select from 'react-select';
+import CustomizedDialogs from '../Components/Dialog'
+import Setup from '../Components/Setup';
 
 function Models () {
 
@@ -43,14 +45,18 @@ function Models () {
     const cogHandler = e => {
         cogValue(e.label);
     }
+    
     return (
             <div>    
                 <div id="div1">
+                    <h4>Versions</h4>
                     <Select options={SysList} onChange={sysHandler}/>     
                     <h1>{result1}</h1>  
                 </div>
                 <div id="div2">
-                    <Select options={CogList} onChange={cogHandler}/>     
+                    <h4>Cognitive Models</h4>
+                    <Select options={CogList} onChange={cogHandler}/>   
+                    <CustomizedDialogs><Setup/></CustomizedDialogs>  
                     <h1>{result2}</h1>  
                 </div>     
             </div>

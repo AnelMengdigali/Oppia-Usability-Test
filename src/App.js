@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
+import Setup from './Components/Setup';
 
 import Home from './Pages/Home';
 import Systems from './Pages/Systems';
@@ -36,9 +37,7 @@ const App = () => {
           <Route path="/login" exact component={Login} /> 
         </Switch>
         </Container>
-        <CustomizedDialogs>
-          Set up form
-        </CustomizedDialogs>
+       
         <Footer/>
       </Router>
     </div>
