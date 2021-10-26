@@ -17,11 +17,13 @@ const NavBar = () => {
             </Hamburger>
             <Menu isOpen={isOpen}>               
                 <Link to="/"><MenuLink>Home</MenuLink></Link>
-                <Link to="/systems"><MenuLink>Systems</MenuLink></Link>
-                <Link to="/models"><MenuLink>Cognitive Models</MenuLink></Link>
-                <Link to="/about"><MenuLink>About</MenuLink></Link>
-                <Link to="/contact"><MenuLink>Contact</MenuLink></Link>
-                <Link to="/login"><MenuLink>Login</MenuLink></Link>
+                <Link to="/systems"><MenuLink>Projects</MenuLink></Link>
+                <Link to="/models"><MenuLink>Models</MenuLink></Link>
+                <Link to="/results"><MenuLink>Datasets</MenuLink></Link>
+                <Link to="/moder"><MenuLink>Documentation</MenuLink></Link>
+                <Link to="/contact"><MenuLink>Forum</MenuLink></Link>
+                { /*<Link to="/about"><MenuLink>About</MenuLink></Link>*/}
+                {/* <Link to="/login"><MenuLink>Login</MenuLink></Link>*/}
                 {/* <MenuLink href="">Home</MenuLink>*/}
             </Menu>
         </Nav>

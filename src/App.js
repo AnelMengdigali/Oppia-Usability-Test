@@ -13,6 +13,7 @@ import Contact from "./Pages/Contact";
 import Login from "./Pages/Login";
 import Models from './Pages/Models';
 import Table from './Pages/Table';
+import Moderator from './Pages/Moderator';
 
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import CustomizedDialogs from './Components/Dialog';
@@ -32,6 +33,8 @@ const App = () => {
           <Route path="/" exact={true} component={Home} />
           <Route path="/systems" exact component={Systems} />
           <Route path="/models" exact component={Models} />
+          <Route path="/results" exact component={Table} />
+          <Route path="/moder" exact component={Moderator} />
           <Route path="/about" exact component={About} />
           <Route path="/contact" exact component={Contact} />
           <Route path="/login" exact component={Login} /> 

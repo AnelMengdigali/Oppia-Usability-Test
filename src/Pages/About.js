@@ -7,25 +7,19 @@ import "../Styles/About.css";
 function About() {
   return (
     <div className="about">
-      <div className="aboutTop"></div>
-      <div className="aboutBottom">
-        <h1> ABOUT US</h1>
+        <h2> More about this website and responsible team </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-          voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-          fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-          accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
-          molestias architecto voluptate aliquam nihil, eveniet aliquid culpa
-          officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum
-          nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque
-          error repudiandae fuga? Ipsa laudantium molestias eos sapiente
-          officiis modi at sunt excepturi expedita sint? Sed quibusdam
-          recusandae alias error harum maxime adipisci amet laborum.
-          Perspiciatis minima nesciunt dolorem! Officiis iure rerum voluptates a
-          cumque velit
+        This project aims to develop a web-based tool for the simulation and analysis of models of human reasoning, learning and behavior as well as interactive systems composed of human components and computer/physical components. The purpose of the tool is two-fold: 
         </p>
-      </div>
+        <p>- use the simulation  to carry out in silico experiments on the human component, compare them with experiments with human subjects</p>
+        <p>- simulate and analyse the overall interactive system</p>
+        <p>
+        Typical users of the framework will be cognitive psychologists, HCI design teams, usability analysts. The domain experts from psychology and HCI would benefit from this system by conducting their experiments to validate the cognitive theory. 
+        </p>
+        <p>The tool will include simulation and analysis engines as well as appropriate interfaces and mechanisms for:</p> 
+        <p>- modeling the human components, the computer/physical components and the operating environment;</p>
+        <p>- setting up and controlling the simulation and analysis of the overall system;</p>
+        <p>- presenting and comparing the results of the experiments.</p>
     </div>
   );
 }
