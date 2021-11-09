@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,12 +17,15 @@ const NavBar = () => {
                 <span />
             </Hamburger>
             <Menu isOpen={isOpen}>               
-                <Link to="/"><MenuLink>Home</MenuLink></Link>
-                <Link to="/systems"><MenuLink>Projects</MenuLink></Link>
-                <Link to="/models"><MenuLink>Models</MenuLink></Link>
-                <Link to="/results"><MenuLink>Datasets</MenuLink></Link>
-                <Link to="/moder"><MenuLink>Documentation</MenuLink></Link>
-                <Link to="/contact"><MenuLink>Forum</MenuLink></Link>
+                <NavLink to="/"><MenuLink>Home</MenuLink></NavLink>
+                {/*<Link to="/systems"><MenuLink>Projects</MenuLink></Link>*/}
+                <NavLink to='/systems' activeStyle={{color: "white"}}><MenuLink>Projects</MenuLink></NavLink>
+                <NavLink to="/models"><MenuLink>Models</MenuLink></NavLink>
+                <NavLink to="/moder"><MenuLink>Entities</MenuLink></NavLink>
+                <NavLink to="/results"><MenuLink>Dataset</MenuLink></NavLink>
+                <NavLink to="/about"><MenuLink>Documentation</MenuLink></NavLink>
+                <NavLink to="/contact"><MenuLink>Forum</MenuLink></NavLink>
+                <NavLink to="/login"><MenuLink>Access</MenuLink></NavLink>
                 { /*<Link to="/about"><MenuLink>About</MenuLink></Link>*/}
                 {/* <Link to="/login"><MenuLink>Login</MenuLink></Link>*/}
                 {/* <MenuLink href="">Home</MenuLink>*/}
@@ -46,7 +50,7 @@ const Hamburger = styled.div`
 
     span {
         height: 2px;
-        width: 25px;
+        width: 20px;
         background: #020024;
         margin-bottom: 4px;
         corder-radius: 5px;

@@ -26,7 +26,7 @@ export const SystemsList = [
   {
     name: "Experiments on primacy effect (Re-alpha)",
     image: img4,
-    definition: "The primacy e ect may be observed when a human subject is asked to recall a list of words ...",
+    definition: "The primacy effect may be observed when a human subject is asked to recall a list of words ...",
   },
   {
     name: "Experiments on human learning (Re-beta)",

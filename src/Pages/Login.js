@@ -56,7 +56,7 @@ class Login extends Component {
     submit(e) {
         e.preventDefault();
 
-        window.axios.post('api/login', {email: this.state.email, password: this.state.password})
+        window.axios.post('api/auth/login', {email: this.state.email, password: this.state.password})
         .then(response=>{
             console.log(response);
             this.setState({loggedIn:true});
