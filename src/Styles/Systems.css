@@ -48,11 +48,13 @@
     text-align: center;
     margin-left: 15pt;
     margin-right: 15pt;
+    color: #082b44;
   }
   .systemsItem p {
     text-align: justify;
     margin-left: 10pt;
     margin-right: 10pt;
+    color: #082b44;
   }
   
   @media only screen and (max-width: 1300px) {

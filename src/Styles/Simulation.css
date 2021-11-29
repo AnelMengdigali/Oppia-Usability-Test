@@ -1,0 +1,67 @@
+h1{
+    font-size: 2rem;
+}
+.title{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h2{
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 1rem 0;
+}
+
+h2:hover{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    color: #037FFF;
+}
+
+p{
+    color: rgba(15, 12, 12, 0.596);
+}
+
+.buttons{
+    width: 70%;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.btn{
+    padding: .5rem 2rem;
+    background-color: #0C3564;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    transition: all 0.4s cubic-bezier(1,-0.16,.6,1.35);
+}
+
+.btn:not(:last-child){
+    margin-right: 1rem;
+}
+
+.btn:hover{
+    background-color: #037FFf;
+    cursor: pointer;
+}
+
+.btn:active, .btn:focus{
+    outline: none;
+    border: none;
+}
+
+#div4{
+    width: 100px;
+    height: 400px;
+    margin-left: 400pt;
+    float: left;
+    position: relative;
+}
+#div3{
+    width: 96%;
+    margin-left: 20pt;
+    float: left;
+    height: 400px;
+}

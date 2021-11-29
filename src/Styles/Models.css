@@ -2,15 +2,24 @@
     width: 45%;
     float: left;
     margin-left: 20pt;
+    height: 300px;
 }
 #div2{
     width: 45%;
     float: right;
     margin-right: 20pt;
+    height: 300px;
 }
 #div3{
-    text-align: center;
-    width: 100%;
-    top: 100px;
+    width: 96%;
+    margin-left: 20pt;
+    float: left;
+    height: 200px;
 }
-
+#div4{
+    width: 400px;
+    height: 400px;
+    margin-left: 400pt;
+    float: left;
+    position: relative;
+}
