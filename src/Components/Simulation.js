@@ -5,7 +5,7 @@ import Button from './Button';
 
 import '../Styles/Simulation.css';
 
-const allCategories = [...new Set(items.map(item => item.category))];
+const allCategories = ['Global State', ...new Set(items.map(item => item.category))];
 
 console.log(allCategories);
 
@@ -16,10 +16,10 @@ function Simulation() {
   //Filter Function
   const filter = (button) =>{
 
-    {/*if(button === 'Action'){
+    if(button === 'Global State'){
       setMenuItem(items);
       return;
-    } */}
+    } 
 
     const filteredData = items.filter(item => item.category ===  button);
     setMenuItem(filteredData)

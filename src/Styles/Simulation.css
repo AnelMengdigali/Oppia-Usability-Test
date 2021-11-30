@@ -19,7 +19,7 @@ h2:hover{
 }
 
 p{
-    color: rgba(15, 12, 12, 0.596);
+    color: rgba(0, 0, 0, 0.596);
 }
 
 .buttons{
@@ -52,16 +52,19 @@ p{
     border: none;
 }
 
-#div4{
+#div5{
     width: 100px;
     height: 400px;
     margin-left: 400pt;
     float: left;
     position: relative;
 }
-#div3{
-    width: 96%;
+#div6{
+    width: 100%;
     margin-left: 20pt;
     float: left;
-    height: 400px;
+    height: 500px;
+    margin-left: 170pt;
+    font-size: 2rem;
+    background-color: 'grey'
 }

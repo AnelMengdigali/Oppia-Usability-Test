@@ -11,11 +11,6 @@ import { Button, ButtonLabel } from '../Components/Button.style';
 function Models () {
 
     let navigate = useHistory();
-    let location = useLocation();
-
-    const dataPass = [{id: 1, name: 'Ford', color: 'red'}];
-
-    const { data } = location.state;
 
     var OverList = [
         {
@@ -93,7 +88,6 @@ function Models () {
   
     return (
             <div>   
-                <h4>{data}</h4>
                 <div id="div3">
                     <h4>Overall Models</h4>
                     <Select options={OverList} onChange={overHandler}/>   
@@ -114,7 +108,7 @@ function Models () {
                 </div>  
                 <div id="div4">
                 <Button backgroundColor="#082b44" 
-                onClick={() => {navigate.push({ pathname: '/', state: dataPass})}}><ButtonLabel>Run</ButtonLabel></Button>
+                onClick={() => {navigate.push('/')}}><ButtonLabel>Run</ButtonLabel></Button>
                 </div>
             </div>
         )

@@ -1,55 +1,43 @@
-import React from 'react'
-import MaterialTable from 'material-table'
-
+import { Block } from '@material-ui/icons';
+import {useState, useEffect} from 'react'
+import {Table} from 'react-bootstrap';
 import { Button, ButtonLabel } from './Button.style';
 
 function Menu({menuItem}) {
 
-    const data=[
-        {domain: 'Birds', fact: 'bird is a animal'},
-        {domain: 'Birds', fact: 'bird can fly'},
-        {domain: 'Fish', fact: 'fish is a animal'},
-        {domain: 'Fish', fact: 'bird has feathers'}
-    ]
+//    const [data, setData] = useState(menuItem);
 
-    const columns=[
-        {title:'Domain', field:'domain'},
-        {title:'Fact', field:'fact'}
-    ]
-    
+//    function updateData() {
+//        setData(data+1)
+//    }
+
+    function updateData() {
+        menuItem.map((item) => <p>{item.title}</p>)
+    }
+
     return (
-        <div className="item">
-            {
-                menuItem.map((item) =>{
-                    return <div className="item-con" key={item.id}>
-                        <div className="item-container">
-                            <img src={item.image} alt=""/>
-                            <h2>{item.title}</h2>
-                            <p>{item.description}</p>
-                            <p>{item.data}</p>
-                        </div>
-                    </div>
-                })
-            }
-        
-        <div id="div3">
-        <MaterialTable
-            title="Short-Term Memory"
-            data={data}
-            columns={columns}
-            options={{
-                search: false,
-                paging: false,
-                filtering: false,
-                exportButton: false,
-                cellEditable: false
-        }}
-        />
+        <div>
+            <div id="div6">
+                <table>
+                        <thead>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        
+                        {menuItem.map((item) => ( 
+                        <tbody>
+                            <tr>
+                                <td>{item.title}</td>
+                            </tr>
+                        </tbody>
+                        ))}
+                </table>
+            </div>
+            <div id="div5">
+                <Button backgroundColor="#0C3564" onClick={updateData}><ButtonLabel>Next</ButtonLabel></Button> 
+            </div>
         </div>
-        <div id="div4">
-        <Button backgroundColor="#082b44"><ButtonLabel>Next</ButtonLabel></Button>
-        </div>
-    </div>
     )
 }
 
