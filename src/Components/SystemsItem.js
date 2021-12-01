@@ -9,7 +9,7 @@ function SystemsItem({ image, name, definition }) {
   return (
     <div className="systemsItem">
        <Link underline='none' component={RouterLink} 
-       to={{pathname: "/models", state: {data: true}}}>
+       to={{pathname: "/configuration", state: {data: true}}}>
       <div style={{ backgroundImage: `url(${image})` }}> </div>
       <h3> {name} </h3>
       <p> {definition} </p>

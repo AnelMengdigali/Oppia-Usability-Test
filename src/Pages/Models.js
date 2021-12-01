@@ -5,6 +5,7 @@ import CustomizedDialogs from '../Components/Dialog'
 import Setup from '../Components/Setup';
 import { useHistory, useLocation } from 'react-router-dom'
 import Table from './Table'
+import img1 from '../Assets/img1.png';
 
 import { Button, ButtonLabel } from '../Components/Button.style';
 
@@ -16,35 +17,20 @@ function Models () {
         {
             value: 1,
             label: "Overall Model 1: Abstract",
-            description: "Description of Overall Model Version 1.0. This is the fast addition version with facts starting at every 10 seconds."
+            description: "Description: abstract overall model for people and dogs project"
         },
         {
             value: 2,
             label: "Overall Model 2: Concrete", 
-            description: "Description of Overall Model Version 1.1"
+            description: "Description: concrete overall model for people and dogs project"
         }
     ];
 
     var SysList = [
         {
             value: 1,
-            label: "Version 1: System",
-            description: "Description of System Model Version 1.0. This is the fast addition version with facts starting at every 10 seconds."
-        },
-        {
-            value: 2,
-            label: "Version 2: System", 
-            description: "Description of System Model Version 1.1"
-        },
-        {
-            value: 3,
-            label: "Version 1", 
-            description: "Description of System Model Version 1.1"
-        },
-        {
-            value: 4,
-            label: "Version 2", 
-            description: "Description of System Model Version 1.1"
+            label: "Version 1",
+            description: "Description: person patting a dog"
         }
     ];
 
@@ -52,22 +38,12 @@ function Models () {
         {
             value: 1,
             label: "Version 1: Child",
-            description: "Description of Cognitive Model Version 1. This is learing mode experiment by transfer of information for STM to LTM" 
+            description: "Description: child aiming to pat a dog" 
         },
         {
             value: 2,
             label: "Version 2: John", 
-            description: "Description of Cognitive Model Version 2"
-        }, 
-        {
-            value: 3,
-            label: "Version 1", 
-            description: "Description of Cognitive Model Version 2"
-        },
-        {
-            value: 4,
-            label: "Version 2", 
-            description: "Description of System Model Version 1.1"
+            description: "Description: adult patting a dog"
         }
     ];
 
@@ -89,26 +65,37 @@ function Models () {
     return (
             <div>   
                 <div id="div3">
+                    <h1>Interaction human-dog project</h1>
+                    <h3>Stage: Pre-model</h3>
+                    <h3>Access: Public</h3>
+                    <h2>Please configure models to run the experiment by selecting Overall Model and corresponding System and Cognitive Models to it below.</h2>
+                </div>
+            
+                <div id="div3">
                     <h4>Overall Models</h4>
                     <Select options={OverList} onChange={overHandler}/>   
                     {/*<CustomizedDialogs></CustomizedDialogs>  */}  
-                    <h3>{result}</h3>  
+                    <h2>{result}</h2>  
                 </div>
                 <div id="div1">
                     <h4>System Models</h4>
                     <Select options={SysList} onChange={sysHandler}/>   
                     {/*<CustomizedDialogs></CustomizedDialogs> */}  
-                    <h3>{result1}</h3>  
+                    <h2>{result1}</h2>  
                 </div>
                 <div id="div2">
                     <h4>Cognitive Models</h4>
                     <Select options={CogList} onChange={cogHandler}/>   
                     {/*<CustomizedDialogs><Setup/></CustomizedDialogs> */} 
-                    <h3>{result2}</h3>  
+                    <h2>{result2}</h2>  
                 </div>  
                 <div id="div4">
-                <Button backgroundColor="#082b44" 
-                onClick={() => {navigate.push('/')}}><ButtonLabel>Run</ButtonLabel></Button>
+                    <Button backgroundColor="#082b44" 
+                    onClick={() => {navigate.push('/simulation')}}><ButtonLabel>Run: end result</ButtonLabel></Button>
+                    <Button backgroundColor="#082b44" 
+                    onClick={() => {navigate.push('/simulation')}}><ButtonLabel>Run: manual</ButtonLabel></Button>
+                    <Button backgroundColor="#082b44" 
+                    onClick={() => {navigate.push('/systems')}}><ButtonLabel>Go Back</ButtonLabel></Button>
                 </div>
             </div>
         )

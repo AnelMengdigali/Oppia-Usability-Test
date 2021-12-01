@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import items from './Alldata';
+import console from './Consoledata';
 import Menu from './Menu';
 import Button from './Button';
 
@@ -7,19 +8,18 @@ import '../Styles/Simulation.css';
 
 const allCategories = ['Global State', ...new Set(items.map(item => item.category))];
 
-console.log(allCategories);
-
 function Simulation() {
   const [menuItem, setMenuItem] = useState(items);
+  
   const [buttons, setButtons] = useState(allCategories);
 
   //Filter Function
   const filter = (button) =>{
 
     if(button === 'Global State'){
-      setMenuItem(items);
+      setMenuItem(console);
       return;
-    } 
+    }
 
     const filteredData = items.filter(item => item.category ===  button);
     setMenuItem(filteredData)
@@ -27,7 +27,7 @@ function Simulation() {
 
 
   return (
-    <div className="Simulation">
+    <div className="App">
        
        <div className="title">
          <h1>
@@ -37,7 +37,7 @@ function Simulation() {
 
 
       <Button button={buttons} filter={filter} />
-       <Menu menuItem={menuItem}/>
+      <Menu menuItem={menuItem}/>
 
     </div>
   );

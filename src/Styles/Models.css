@@ -11,13 +11,14 @@
     height: 300px;
 }
 #div3{
+    margin-top: 5%;
     width: 96%;
     margin-left: 20pt;
     float: left;
     height: 200px;
 }
 #div4{
-    width: 400px;
+    width: 300px;
     height: 400px;
     margin-left: 400pt;
     float: left;

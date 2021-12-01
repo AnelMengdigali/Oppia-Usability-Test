@@ -23,11 +23,13 @@ class Test extends Component {
 
         this.setState({ isLoading: true })
         ///
-        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        const response = await fetch('http://localhost:8080/api/project/public')
         ///
         
         if (response.ok) {
           const users = await response.json()
+          console.log(users);
+
           this.setState({ users: users, isLoading: false })
         } else {
           this.setState({ isError: true, isLoading: false })

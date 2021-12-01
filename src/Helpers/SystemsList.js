@@ -7,6 +7,7 @@ import img6 from '../Assets/img6.png';
 import img7 from '../Assets/img7.png';
 import img8 from '../Assets/img8.png';
 
+
 export const SystemsList = [
   {
     name: "Interaction human-dog (Stable)",

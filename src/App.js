@@ -19,7 +19,10 @@ import Moderator from './Pages/Moderator';
 
 import Test from './Pages/Test';
 import Fetch from './Helpers/useFetch';
-import Sim from './Components/Simulation';
+import Sim from './Components/Simulation'
+
+import ModelDB from './Pages/ModelDB';
+import EntityDB from './Pages/EntityDB';
 
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import CustomizedDialogs from './Components/Dialog';
@@ -38,10 +41,12 @@ const App = () => {
         <Container>
         <NavBar/>
         <Switch> 
-          {/*<Route path="/" exact={true} component={Home} />*/}
-          <Route path="/" exact={true} component={Sim}/> 
+          <Route path="/" exact={true} component={Home} />
           <Route path="/systems" exact component={Systems} />
-          <Route path="/models" exact component={Models} />
+          <Route path="/simulation" exact={true} component={Sim}/> 
+          <Route path="/configuration" exact component={Models} />
+          <Route path="/models" exact component={ModelDB} />
+          <Route path="/entities" exact component={EntityDB} />
           <Route path="/results" exact component={Table} />
           <Route path="/moder" exact component={Moderator} />
           <Route path="/about" exact component={About} />

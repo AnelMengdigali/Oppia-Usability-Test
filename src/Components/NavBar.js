@@ -21,7 +21,7 @@ const NavBar = () => {
                 {/*<Link to="/systems"><MenuLink>Projects</MenuLink></Link>*/}
                 <NavLink to='/systems' activeStyle={{color: "white"}}><MenuLink>Projects</MenuLink></NavLink>
                 <NavLink to="/models"><MenuLink>Models</MenuLink></NavLink>
-                <NavLink to="/moder"><MenuLink>Entities</MenuLink></NavLink>
+                <NavLink to="/entities"><MenuLink>Entities</MenuLink></NavLink>
                 <NavLink to="/results"><MenuLink>Dataset</MenuLink></NavLink>
                 <NavLink to="/about"><MenuLink>Documentation</MenuLink></NavLink>
                 <NavLink to="/contact"><MenuLink>Forum</MenuLink></NavLink>

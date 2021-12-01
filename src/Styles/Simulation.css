@@ -1,25 +1,29 @@
-h1{
-    font-size: 2rem;
-}
 .title{
-    padding: 1rem 0;
+    font-family: 'Varela Round', sans-serif;
+    padding: 2rem 1rem;
     text-align: center;
+    color: #10121B;
 }
 
 h2{
+    font-family: 'Varela Round', sans-serif;
     font-size: 1rem;
     font-weight: 200;
     margin: 1rem 0;
 }
 
-h2:hover{
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    color: #037FFF;
+.item{
+    padding-bottom: 2rem;
+    height: 240px;
+    overflow: auto;
 }
 
-p{
-    color: rgba(0, 0, 0, 0.596);
+.item-con{
+    width: 90%;
+    padding: 1rem 1rem;
+    background-color: #19202E;
+    margin-left: 35pt;
+    color: white;
 }
 
 .buttons{
@@ -58,13 +62,4 @@ p{
     margin-left: 400pt;
     float: left;
     position: relative;
-}
-#div6{
-    width: 100%;
-    margin-left: 20pt;
-    float: left;
-    height: 500px;
-    margin-left: 170pt;
-    font-size: 2rem;
-    background-color: 'grey'
 }

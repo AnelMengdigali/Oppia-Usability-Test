@@ -1,0 +1,48 @@
+.model {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .modelList {
+    width: 100vw;
+    height: auto;
+  }
+  
+  /* MENU ITEM STYLING */
+  
+  .modelDBItem {
+    width: 95%;
+    height: 100px;
+    margin: 30px;
+    background-color: lightskyblue;
+  }
+  .modelDBItem:hover {
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    background-color: darkcyan;
+  }
+  
+  .modelDBItem div {
+    width: 100%;
+    height: 20px;
+    position: center;
+  }
+  
+  .modelDBItem h3 {
+    padding-top: 15pt;
+    margin-top: 20pt;
+    text-align: left;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    color: #082b44;
+  }
+  .modelDBItem p {
+    text-align: left;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    color: #082b44;
+  }
