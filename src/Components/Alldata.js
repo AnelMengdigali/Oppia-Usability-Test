@@ -110,7 +110,6 @@ export default [
         title: 'Step 4\npat(dog), friendly(dog)',
         category: 'Short-term Memory'
     },
-    ,
     {
         id:23,
         title: 'Step 5\npat(dog), friendly(dog), wagging(dog)',

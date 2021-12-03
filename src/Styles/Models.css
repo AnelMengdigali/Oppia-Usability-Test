@@ -2,16 +2,16 @@
     width: 45%;
     float: left;
     margin-left: 20pt;
-    height: 300px;
+    height: 200px;
 }
 #div2{
     width: 45%;
     float: right;
     margin-right: 20pt;
-    height: 300px;
+    height: 200px;
 }
 #div3{
-    margin-top: 5%;
+    margin-top: 1%;
     width: 96%;
     margin-left: 20pt;
     float: left;
@@ -19,7 +19,7 @@
 }
 #div4{
     width: 300px;
-    height: 400px;
+    height: 200px;
     margin-left: 400pt;
     float: left;
     position: relative;

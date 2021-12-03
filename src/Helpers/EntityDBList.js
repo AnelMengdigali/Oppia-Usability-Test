@@ -1,39 +1,39 @@
 export const EntityDBList = [
     {
-      name: "State: Adjective Phrase",
-      definition: "far, close, friendly, happy dog",
+      name: "approach(dog)",
+      definition: "action, verb phrase",
     },
     {
-      name: "Model Identifier: Noun Phrase",
-      definition: "dog, what, Lucky, John, Paul, long leg, 4 legs, 4 long legs",
+      name: "wagging(dog)",
+      definition: "state, participle phrase",
     },
     {
-      name: "Action: Verb Phrase",
-      definition: "approach, pat, leave, move, move quickly",
+      name: "empty(box)",
+      definition: "model identifier, adjective phrase",
     },
     {
-      name: "State: Participle Phrase",
-      definition: "wagging, moving, moved, quickly moved",
+      name: "moved(quickly)",
+      definition: "state, adverb phrase",
     },
     {
-      name: "Model Identifier: Adjective Phrase",
-      definition: "enough, empty, heavy, full, empty box, heavy empty box",
+      name: "A dog is an animal.",
+      definition: "fact, auxiliary phrase"
     },
     {
-      name: "Goal: Verb Phrase",
-      definition: "pat a dog, moved full box",
+      name: "Is a dog not an animal?",
+      definition: "question, auxiliary phrase"
     },
     {
-      name: "State: Adverb Phrase",
-      definition: "slowly, quickly, quickly moved, quickly moving",
+      name: "(heavy(empty(box))",
+      definition: "model identifier, adjective phrase",
     },
     {
-      name: "Fact: Auxiliary Phrase",
-      definition: "A dog is an animal., A dog is not a bird."
+      name: "pat(dog)",
+      definition: "goal",
     },
     {
-      name: "Question: Auxiliary Phrase",
-      definition: "Is a dog not an animal?, What is dog?, Is a dog an animal?"
+      name: "moved(full(box))",
+      definition: "goal",
     }
   ];
   

@@ -72,7 +72,7 @@ function Models () {
                 </div>
             
                 <div id="div3">
-                    <h4>Overall Models</h4>
+                    <h2>Overall Models</h2>
                     <Select options={OverList} onChange={overHandler}/>   
                     {/*<CustomizedDialogs></CustomizedDialogs>  */}  
                     <h2>{result}</h2>  
