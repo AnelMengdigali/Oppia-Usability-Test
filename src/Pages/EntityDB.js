@@ -1,11 +1,11 @@
 import React from "react";
-import { EntityDBList } from "../Helpers/EntityDBList";
-import EntityDBItem from "../Components/EntityDBItem";
+import { EntityDBList } from "../Helpers/EntitiesData";
+import EntityDBItem from "../Components/EntitiesItem";
 import "../Styles/EntityDB.css";
 import {useForm} from 'react-hook-form';
 import { useHistory, useParams } from 'react-router-dom';
 
-import { Button, ButtonLabel } from '../Components/Button.style';
+import { Button, ButtonLabel } from '../Helpers/Button.style';
 
 function EntityDB() {
   const {register, handleSubmit} = useForm()

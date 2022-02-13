@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import items from './Alldata';
-import console from './Consoledata';
-import Menu from './Menu';
+import items from '../Helpers/SimulationData';
+import console from '../Helpers/ConsoleData';
+import Menu from './SimulationMenu';
 import Button from './Button';
 
 import '../Styles/Simulation.css';
@@ -23,6 +23,7 @@ function Simulation() {
 
     const filteredData = items.filter(item => item.category ===  button);
     setMenuItem(filteredData)
+    
   }
 
 

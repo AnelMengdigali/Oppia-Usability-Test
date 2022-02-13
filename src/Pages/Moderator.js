@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Styles/Moderator.css';
-import RolesItems from '../Helpers/RolesList'
+import RolesItems from '../Components/RolesList'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
 

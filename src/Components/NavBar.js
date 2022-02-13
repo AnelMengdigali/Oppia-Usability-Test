@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,8 +17,7 @@ const NavBar = () => {
             </Hamburger>
             <Menu isOpen={isOpen}>               
                 <NavLink to="/"><MenuLink>Home</MenuLink></NavLink>
-                {/*<Link to="/systems"><MenuLink>Projects</MenuLink></Link>*/}
-                <NavLink to='/systems' activeStyle={{color: "white"}}><MenuLink>Projects</MenuLink></NavLink>
+                <NavLink to="/systems"><MenuLink>Projects</MenuLink></NavLink>
                 <NavLink to="/models"><MenuLink>Models</MenuLink></NavLink>
                 <NavLink to="/entities"><MenuLink>Entities</MenuLink></NavLink>
                 <NavLink to="/results"><MenuLink>Dataset</MenuLink></NavLink>

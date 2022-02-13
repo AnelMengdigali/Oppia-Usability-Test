@@ -7,7 +7,7 @@ import { useHistory, useLocation } from 'react-router-dom'
 import Table from './Table'
 import img1 from '../Assets/img1.png';
 
-import { Button, ButtonLabel } from '../Components/Button.style';
+import { Button, ButtonLabel } from '../Helpers/Button.style';
 
 function Models () {
 

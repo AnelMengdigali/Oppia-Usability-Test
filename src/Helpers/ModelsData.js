@@ -1,4 +1,4 @@
-export const ModelDBList = [
+export const ModelsData = [
     {
       name: "People and dogs (concrete)",
       definition: "concrete overall model for people and dogs project",

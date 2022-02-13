@@ -6,10 +6,6 @@
     align-items: center;
     flex-direction: column;
   }
-  .systems .systemsTitle {
-    font-family: cursive;
-    font-size: 40px;
-  }
   
   .systemsList {
     width: 70vw;
@@ -18,8 +14,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
   }
-  
-  /* MENU ITEM STYLING */
   
   .systemsItem {
     border-radius: 10px;
@@ -49,14 +43,24 @@
     margin-left: 15pt;
     margin-right: 15pt;
     color: #082b44;
+    font-size: 20px;
+    margin-top: 8pt;
   }
   .systemsItem p {
     text-align: justify;
     margin-left: 10pt;
     margin-right: 10pt;
     color: #082b44;
+    font-size: 15px;
   }
   
+  .systemsItem h4 {
+    top: 10pt;
+    margin-left: 6pt;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+  }
+
   @media only screen and (max-width: 1300px) {
     .systemsList {
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -68,4 +72,4 @@
       grid-template-columns: 1fr;
     }
   }
-  
+ 

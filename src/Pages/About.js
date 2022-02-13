@@ -1,9 +1,6 @@
 import React from "react";
 import "../Styles/About.css";
 
-//import MultiplePizzas from "../assets/multiplePizzas.jpeg";
-//style={{ backgroundImage: `url(${MultiplePizzas})` }}
-
 function About() {
   return (
     <div className="about">

@@ -1,19 +1,18 @@
 import React from "react";
-import { SystemsList } from "../Helpers/SystemsList";
+import { SystemsList } from "../Helpers/SystemsData";
 import SystemsItem from "../Components/SystemsItem";
 import "../Styles/Systems.css";
 import {useForm} from 'react-hook-form';
 import { useHistory, useParams } from 'react-router-dom';
 
 function Systems() {
-  const {register, handleSubmit} = useForm()
 
-  const onSubmit = (data) => {
-    console.log(data)
-  }
-
-  let navigate = useHistory();
-  let {name} = useParams();
+  // const {register, handleSubmit} = useForm()
+  // const onSubmit = (data) => {
+  //   console.log(data)
+  // }
+  // let navigate = useHistory();
+  // let {name} = useParams();
 
   return (
     <div className="system">

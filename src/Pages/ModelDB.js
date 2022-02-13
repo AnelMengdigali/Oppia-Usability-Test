@@ -1,11 +1,11 @@
 import React from "react";
-import { ModelDBList } from "../Helpers/ModelDBList";
-import ModelDBItem from "../Components/ModelDBItem";
+import { ModelsData } from "../Helpers/ModelsData";
+import ModelDBItem from "../Components/ModelsItem";
 import "../Styles/ModelDB.css";
 import {useForm} from 'react-hook-form';
 import { useHistory, useParams } from 'react-router-dom';
 
-import { Button, ButtonLabel } from '../Components/Button.style';
+import { Button, ButtonLabel } from '../Helpers/Button.style';
 
 function ModelDB() {
   const {register, handleSubmit} = useForm()
@@ -21,7 +21,7 @@ function ModelDB() {
 <div>
     <div className="model">
       <div className="modelList">
-        {ModelDBList.map((systemsItem, key) => {
+        {ModelsData.map((systemsItem, key) => {
           return (
             <ModelDBItem
               key={key}
