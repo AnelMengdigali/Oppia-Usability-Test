@@ -4,7 +4,7 @@ import {Table} from 'react-bootstrap';
 import '../Styles/Simulation.css';
 import { Button, ButtonLabel } from '../Helpers/Button.style';
 
-function Menu({menuItem}) {
+function MenuMan({menuItem}) {
 
     const [count, setCount] = useState(0)
     // const [check, setCheck] = useState(false)
@@ -70,5 +70,5 @@ function Menu({menuItem}) {
     // )
 }
 
-export default Menu;
+export default MenuMan;
 

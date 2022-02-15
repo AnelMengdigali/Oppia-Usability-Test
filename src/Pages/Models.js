@@ -69,8 +69,7 @@ function Models () {
                     <h3>Stage: Pre-model</h3>
                     <h3>Access: Public</h3>
                     <h2>Please configure models to run the experiment by selecting Overall Model and corresponding System and Cognitive Models to it below.</h2>
-                </div>
-            
+                </div>          
                 <div id="div3">
                     <h2>Overall Models</h2>
                     <Select options={OverList} onChange={overHandler}/>   
@@ -91,9 +90,9 @@ function Models () {
                 </div>  
                 <div id="div4">
                     <Button backgroundColor="#082b44" 
-                    onClick={() => {navigate.push('/simulation')}}><ButtonLabel>Run: end result</ButtonLabel></Button>
+                    onClick={() => {navigate.push('/simulationEnd')}}><ButtonLabel>Run: end result</ButtonLabel></Button>
                     <Button backgroundColor="#082b44" 
-                    onClick={() => {navigate.push('/simulation')}}><ButtonLabel>Run: manual</ButtonLabel></Button>
+                    onClick={() => {navigate.push('/simulationMan')}}><ButtonLabel>Run: manual</ButtonLabel></Button>
                     <Button backgroundColor="#082b44" 
                     onClick={() => {navigate.push('/systems')}}><ButtonLabel>Go Back</ButtonLabel></Button>
                 </div>

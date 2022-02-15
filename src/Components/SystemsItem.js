@@ -12,9 +12,9 @@ function SystemsItem(props) {
       <Link underline='none' component={RouterLink} to={{pathname: "/configuration", state: {data: true}}}>
       {/* <h4>{badgeText}</h4> */}
       <div style={{ backgroundImage: `url(${props.image})` }}>
-      <h4>PUBLIC</h4>
+      {/* <h4>PUBLIC</h4>
         {props.type === "public" && <h4>PUBLIC</h4>}
-        {props.type === "private" && <h4>PRIVATE</h4>}
+        {props.type === "private" && <h4>PRIVATE</h4>} */}
       </div>
       <h3> {props.name} </h3>
       <p> {props.definition} </p>

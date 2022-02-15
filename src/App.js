@@ -15,7 +15,8 @@ import Models from './Pages/Models';
 import Table from './Pages/Table';
 import Moderator from './Pages/Moderator';
 
-import Simulation from './Components/Simulation'
+import SimulationMan from './Components/SimulationMan'
+import SimulationEnd from './Components/SimulationEnd'
 
 import ModelDB from './Pages/ModelDB';
 import EntityDB from './Pages/EntityDB';
@@ -37,7 +38,8 @@ const App = () => {
               <Switch> 
                 <Route path="/" exact={true} component={Home} />
                 <Route path="/systems" exact component={Systems} />
-                <Route path="/simulation" exact={true} component={Simulation}/> 
+                <Route path="/simulationMan" exact={true} component={SimulationMan}/> 
+                <Route path="/simulationEnd" exact={true} component={SimulationEnd}/> 
                 <Route path="/configuration" exact component={Models} />
                 <Route path="/models" exact component={ModelDB} />
                 <Route path="/entities" exact component={EntityDB} />

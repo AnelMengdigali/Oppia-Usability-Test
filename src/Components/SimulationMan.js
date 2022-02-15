@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import items from '../Helpers/SimulationData';
 import console from '../Helpers/ConsoleData';
-import Menu from './SimulationMenu';
+import MenuMan from './SimulationMenuMan';
 import Button from './Button';
 
 import '../Styles/Simulation.css';
@@ -38,7 +38,7 @@ function Simulation() {
 
 
       <Button button={buttons} filter={filter} />
-      <Menu menuItem={menuItem}/>
+      <MenuMan menuItem={menuItem}/>
 
     </div>
   );

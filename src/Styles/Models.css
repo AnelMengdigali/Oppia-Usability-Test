@@ -4,6 +4,7 @@
     margin-left: 20pt;
     height: 200px;
 }
+
 #div2{
     width: 45%;
     float: right;
@@ -11,7 +12,7 @@
     height: 200px;
 }
 #div3{
-    margin-top: 1%;
+    margin-top: 5%;
     width: 96%;
     margin-left: 20pt;
     float: left;
